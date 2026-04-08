@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Md Usman Gani | Best Video Editor in Bangladesh | Founder & CEO of Multimedia Gen</title>
+    <meta name="description" content="Md Usman Gani is a professional video editor and founder of Multimedia Gen with 10+ years experience, 6000+ projects, and a 100+ remote team delivering high-retention, conversion-focused video content.">
+    <meta name="keywords" content="best video editor in Bangladesh, video editor Bangladesh, professional video editing service, Multimedia Gen founder, high retention video editor, video marketing expert">
+    <meta name="author" content="Md Usman Gani">
+    
+    <meta property="og:title" content="Md Usman Gani | Best Video Editor in Bangladesh">
+    <meta property="og:description" content="I create high-retention, conversion-focused video content that grows businesses.">
+    <meta property="og:image" content="https://mdusmangani.com/ceo.jpeg">
+    <meta property="og:url" content="https://mdusmangani.com">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Md Usman Gani",
+      "jobTitle": "Founder & CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Multimedia Gen"
+      },
+      "url": "https://mdusmangani.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/freelancerusman/",
+        "https://www.facebook.com/people/MD-USMAN-GANI/61561117392803/",
+        "https://www.youtube.com/@MD.USMAN_GANI",
+        "https://www.instagram.com/usmanifreelancer"
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#10b981', // Emerald 500
+                        darkBg: '#0a0a0a',
+                        darkCard: '#151515'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+        /* Custom Styles */
+        body { font-family: 'Inter', sans-serif; }
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .gradient-text { background: linear-gradient(to right, #10b981, #34d399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        /* Advanced Name Animation */
+        .name-reveal span { display: inline-block; opacity: 0; transform: translateY(20px); }
+        
+        /* Smooth glowing effects */
+        .glow-effect { position: relative; }
+        .glow-effect::before { content: ''; position: absolute; inset: -5px; background: linear-gradient(to right, #10b981, #059669); filter: blur(20px); opacity: 0; transition: opacity 0.3s; z-index: -1; border-radius: inherit; }
+        .glow-effect:hover::before { opacity: 0.5; }
+
+        /* Hide scrollbar but keep functionality */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #10b981; }
+
+        /* Portfolio Tab Transitions */
+        .tab-content { display: none; animation: fadeIn 0.5s ease; }
+        .tab-content.active { display: grid; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-darkBg text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <header class="fixed top-0 w-full z-50 glass-nav bg-white/70 dark:bg-black/50 border-b border-gray-200 dark:border-white/10 transition-all">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand to-emerald-700 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-brand/30">M</div>
+                <h1 class="text-xl font-extrabold name-reveal cursor-pointer" id="brandName">Md Usman Gani</h1>
+            </div>
+            
+            <nav class="hidden lg:flex gap-6 text-sm font-semibold text-gray-600 dark:text-gray-300">
+                <a href="#home" class="hover:text-brand transition">Home</a>
+                <a href="#services" class="hover:text-brand transition">Services</a>
+                <a href="#portfolio" class="hover:text-brand transition">Portfolio</a>
+                <a href="#expertise" class="hover:text-brand transition">Expertise</a>
+                <a href="#process" class="hover:text-brand transition">Process</a>
+                <a href="#pricing" class="hover:text-brand transition">Pricing</a>
+                <a href="#about" class="hover:text-brand transition">About</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button id="themeToggle" class="p-2 rounded-full bg-gray-200 dark:bg-white/10 hover:bg-gray-300 dark:hover:bg-white/20 transition">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+                </button>
+                <a href="https://wa.me/8801786776958" target="_blank" class="hidden md:flex items-center gap-2 bg-brand hover:bg-emerald-600 text-white px-5 py-2.5 rounded-full font-bold transition-all hover:scale-105 shadow-lg shadow-brand/30">
+                    <i class="fab fa-whatsapp text-lg"></i> Book a Call
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="pt-32 pb-20 px-6 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center min-h-[90vh] relative">
+        <div class="gsap-hero z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400 text-sm font-bold mb-6 shadow-sm">
+                <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-brand"></span>
+                </span>
+                Available for new projects
+            </div>
+            
+            <h2 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6">
+                Hi, I’m Md Usman Gani <br>
+                <span class="gradient-text">Professional Video Editor</span><br>
+                <span class="text-3xl md:text-4xl text-gray-500 dark:text-gray-400">& Founder of Multimedia Gen</span>
+            </h2>
+            
+            <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl border-l-4 border-brand pl-4">
+                Most editors focus only on visuals. <strong class="text-gray-900 dark:text-white">I focus on Retention + Positioning + Conversion.</strong>
+            </p>
+
+            <ul class="space-y-3 mb-8 text-gray-700 dark:text-gray-300 font-medium">
+                <li><i class="fas fa-check-circle text-brand mr-2"></i> Your audience watches longer</li>
+                <li><i class="fas fa-check-circle text-brand mr-2"></i> Your content builds authority</li>
+                <li><i class="fas fa-check-circle text-brand mr-2"></i> Your videos generate leads & sales</li>
+            </ul>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="https://wa.me/8801786776958" target="_blank" class="bg-brand hover:bg-emerald-600 text-white px-8 py-4 rounded-full font-bold transition-all hover:-translate-y-1 shadow-xl shadow-brand/20 flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-xl"></i> Let's Work Together
+                </a>
+                <a href="#portfolio" class="px-8 py-4 rounded-full font-bold border-2 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-white/5 transition-all">
+                    View Portfolio
+                </a>
+            </div>
+        </div>
+
+        <div class="relative gsap-hero-img">
+            <div class="absolute inset-0 bg-gradient-to-tr from-brand/20 to-transparent blur-3xl rounded-full"></div>
+            <img src="ceo.jpeg" alt="Md Usman Gani" class="relative z-10 w-full max-w-md mx-auto rounded-3xl shadow-2xl border border-white/10 object-cover aspect-[4/5] hover:scale-[1.02] transition-transform duration-500">
+            
+            <div class="absolute -left-10 top-20 bg-white dark:bg-darkCard p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-white/10 animate-bounce" style="animation-duration: 3s;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-10 h-10" alt="PR">
+            </div>
+            <div class="absolute -right-5 bottom-32 bg-white dark:bg-darkCard p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-white/10 animate-bounce" style="animation-duration: 4s;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-10 h-10" alt="AE">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 border-y border-gray-200 dark:border-white/5 bg-white/50 dark:bg-black/30">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+            <div class="flex gap-4 justify-center md:justify-start">
+                <span class="font-bold mr-4 text-gray-500">Follow Me:</span>
+                <a href="https://www.linkedin.com/in/freelancerusman/" target="_blank" class="text-2xl text-gray-400 hover:text-[#0077b5] transition hover:-translate-y-1"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/people/MD-USMAN-GANI/61561117392803/" target="_blank" class="text-2xl text-gray-400 hover:text-[#1877F2] transition hover:-translate-y-1"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@MD.USMAN_GANI" target="_blank" class="text-2xl text-gray-400 hover:text-[#FF0000] transition hover:-translate-y-1"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/usmanifreelancer" target="_blank" class="text-2xl text-gray-400 hover:text-[#E4405F] transition hover:-translate-y-1"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="flex flex-wrap gap-6 justify-center md:justify-end font-bold text-sm">
+                <a href="https://multimediagen.com" target="_blank" class="hover:text-brand transition"><i class="fas fa-globe mr-1 text-brand"></i> Multimedia Gen</a>
+                <a href="https://shop.multimediagen.com" target="_blank" class="hover:text-brand transition"><i class="fas fa-shopping-cart mr-1 text-brand"></i> Gen Shop</a>
+                <a href="https://multimediagen.com/Institute" target="_blank" class="hover:text-brand transition"><i class="fas fa-graduation-cap mr-1 text-brand"></i> Institute</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 max-w-5xl mx-auto text-center gsap-section">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4">Watch My Introduction</h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">Learn who I am, how I work, and how I help brands grow using strategic video content.</p>
+        <div class="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10 group glow-effect">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9nPUftmlVhM" title="Intro Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="relative z-10"></iframe>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-gray-100 dark:bg-darkCard border-y border-gray-200 dark:border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Video Content That Performs</h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Your video should not just look good — it must perform and generate results. I optimize for hook, retention, story structure, and brand consistency.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 gsap-stagger">
+                <div class="bg-white dark:bg-black p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-white/5 hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 text-brand rounded-2xl flex items-center justify-center text-2xl mb-6"><i class="fas fa-film"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Documentary</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm">Deep storytelling with high-end visual assets and engaging narrative structure.</p>
+                </div>
+                <div class="bg-white dark:bg-black p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-white/5 hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 text-brand rounded-2xl flex items-center justify-center text-2xl mb-6"><i class="fas fa-user-tie"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Talking Head</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm">Authority-building videos optimized for YouTube and personal branding.</p>
+                </div>
+                <div class="bg-white dark:bg-black p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-white/5 hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 text-brand rounded-2xl flex items-center justify-center text-2xl mb-6"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Reels / Shorts</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm">High-retention short-form content designed for viral growth and leads.</p>
+                </div>
+                <div class="bg-white dark:bg-black p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-white/5 hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 text-brand rounded-2xl flex items-center justify-center text-2xl mb-6"><i class="fas fa-bullhorn"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Promotional Ads</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm">Conversion-focused video ads for Facebook, TikTok, and direct sales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 px-6 max-w-7xl mx-auto gsap-section">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Selected Works & Case Studies</h2>
+            
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button class="tab-btn active px-6 py-2.5 rounded-full font-bold bg-brand text-white shadow-lg" data-target="doc">Documentary</button>
+                <button class="tab-btn px-6 py-2.5 rounded-full font-bold bg-gray-200 text-gray-700 dark:bg-white/10 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-white/20 transition" data-target="talking">Talking Head</button>
+                <button class="tab-btn px-6 py-2.5 rounded-full font-bold bg-gray-200 text-gray-700 dark:bg-white/10 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-white/20 transition" data-target="reels">Reels</button>
+                <button class="tab-btn px-6 py-2.5 rounded-full font-bold bg-gray-200 text-gray-700 dark:bg-white/10 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-white/20 transition" data-target="promo">Promo Ads</button>
+            </div>
+
+            <div id="doc" class="tab-content active md:grid-cols-2 gap-8">
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/JzT3RLmK8RE" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/6hm_4z1SKV0" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/xi1OUMiSkwI" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/FaDU0aQOg0U" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+
+            <div id="talking" class="tab-content md:grid-cols-2 gap-8">
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/0lQbe9qfhfo" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/D5uC6Zd37No" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/pcnrzBwoVUk" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/0f6_pRAIJjI" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+
+            <div id="reels" class="tab-content md:grid-cols-3 gap-6">
+                <div class="aspect-[9/16] rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/riOo8fyde6M" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="aspect-[9/16] rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Iz-hK6N95EM" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="aspect-[9/16] rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/MsRjP3tLLQU" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+
+            <div id="promo" class="tab-content md:grid-cols-2 gap-8">
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/7J8eEv7248g" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/QJL6rScZfXQ" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/vbkaUQ_YpaU" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/lZWtaT0FU1M" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="py-24 bg-gray-100 dark:bg-[#0f0f0f]">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
+            <div class="gsap-section">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Core Philosophy & Skills</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-8 text-lg">I create videos that connect emotionally and drive action. Master of industry-standard tools with a strategic mindset.</p>
+                
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2 font-bold"><span class="flex items-center gap-2"><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-5"> Premiere Pro</span><span>100%</span></div>
+                        <div class="w-full bg-gray-300 dark:bg-white/10 rounded-full h-2.5 overflow-hidden"><div class="bg-brand h-2.5 rounded-full progress-bar" data-width="100%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2 font-bold"><span class="flex items-center gap-2"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-5"> After Effects</span><span>99%</span></div>
+                        <div class="w-full bg-gray-300 dark:bg-white/10 rounded-full h-2.5 overflow-hidden"><div class="bg-brand h-2.5 rounded-full progress-bar" data-width="99%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2 font-bold"><span><i class="fas fa-chart-line text-brand mr-2"></i> Video Marketing Strategy</span><span>95%</span></div>
+                        <div class="w-full bg-gray-300 dark:bg-white/10 rounded-full h-2.5 overflow-hidden"><div class="bg-brand h-2.5 rounded-full progress-bar" data-width="95%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2 font-bold"><span><i class="fas fa-robot text-brand mr-2"></i> AI Prompt Engineering</span><span>90%</span></div>
+                        <div class="w-full bg-gray-300 dark:bg-white/10 rounded-full h-2.5 overflow-hidden"><div class="bg-brand h-2.5 rounded-full progress-bar" data-width="90%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-darkCard p-10 rounded-3xl border border-gray-200 dark:border-white/5 shadow-xl gsap-section">
+                <h3 class="text-2xl font-bold mb-8">Educational Background</h3>
+                <div class="relative border-l-2 border-brand ml-4 space-y-8">
+                    <div class="pl-8 relative">
+                        <span class="absolute w-5 h-5 bg-brand rounded-full -left-[11px] top-1 shadow-[0_0_10px_#10b981]"></span>
+                        <h4 class="font-bold text-xl text-brand">Honours 4th Year (Currently)</h4>
+                        <p class="text-gray-500 dark:text-gray-400 mt-1">Islamic History & Culture - Moulvibazar Govt College</p>
+                    </div>
+                    <div class="pl-8 relative opacity-70">
+                        <span class="absolute w-4 h-4 bg-gray-400 dark:bg-gray-600 rounded-full -left-[9px] top-1.5"></span>
+                        <h4 class="font-bold text-lg">HSC (2020)</h4>
+                    </div>
+                    <div class="pl-8 relative opacity-70">
+                        <span class="absolute w-4 h-4 bg-gray-400 dark:bg-gray-600 rounded-full -left-[9px] top-1.5"></span>
+                        <h4 class="font-bold text-lg">SSC (2018)</h4>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold mt-10 mb-4 border-t border-gray-200 dark:border-white/10 pt-6">Languages</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-100 dark:bg-white/5 rounded-full text-sm">Sylheti (100%)</span>
+                    <span class="px-3 py-1 bg-gray-100 dark:bg-white/5 rounded-full text-sm">Bangla (99%)</span>
+                    <span class="px-3 py-1 bg-gray-100 dark:bg-white/5 rounded-full text-sm">English (90%)</span>
+                    <span class="px-3 py-1 bg-gray-100 dark:bg-white/5 rounded-full text-sm">Hindi (80%)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-24 px-6 max-w-7xl mx-auto gsap-section">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">How I Work</h2>
+            <p class="text-gray-600 dark:text-gray-400">Most clients start with a small project. If results are strong, we scale into long-term collaboration.</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 relative">
+            <div class="hidden lg:block absolute top-1/2 left-0 w-full h-1 bg-gray-200 dark:bg-white/10 -translate-y-1/2 -z-10"></div>
+            
+            <div class="text-center bg-white dark:bg-darkCard p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-white/5 relative z-10">
+                <div class="w-10 h-10 mx-auto bg-brand text-white rounded-full flex items-center justify-center font-bold mb-4">1</div>
+                <h4 class="font-bold text-sm">Requirement</h4>
+            </div>
+            <div class="text-center bg-white dark:bg-darkCard p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-white/5 relative z-10">
+                <div class="w-10 h-10 mx-auto bg-brand text-white rounded-full flex items-center justify-center font-bold mb-4">2</div>
+                <h4 class="font-bold text-sm">Reference</h4>
+            </div>
+            <div class="text-center bg-white dark:bg-darkCard p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-white/5 relative z-10">
+                <div class="w-10 h-10 mx-auto bg-brand text-white rounded-full flex items-center justify-center font-bold mb-4">3</div>
+                <h4 class="font-bold text-sm">Raw Files</h4>
+            </div>
+            <div class="text-center bg-white dark:bg-darkCard p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-white/5 relative z-10">
+                <div class="w-10 h-10 mx-auto bg-brand text-white rounded-full flex items-center justify-center font-bold mb-4">4</div>
+                <h4 class="font-bold text-sm">50% Advance</h4>
+            </div>
+            <div class="text-center bg-white dark:bg-darkCard p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-white/5 relative z-10">
+                <div class="w-10 h-10 mx-auto bg-brand text-white rounded-full flex items-center justify-center font-bold mb-4">5</div>
+                <h4 class="font-bold text-sm">Editing</h4>
+            </div>
+            <div class="text-center bg-brand p-6 rounded-2xl shadow-lg shadow-brand/30 relative z-10 text-white transform scale-105">
+                <div class="w-10 h-10 mx-auto bg-white text-brand rounded-full flex items-center justify-center font-bold mb-4"><i class="fas fa-check"></i></div>
+                <h4 class="font-bold text-sm">Delivery</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-24 bg-gray-100 dark:bg-[#0f0f0f] border-y border-gray-200 dark:border-white/5">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">Transparent Pricing</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">Pricing depends on project complexity, duration, and creative requirements.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 items-center max-w-5xl mx-auto gsap-stagger">
+                <div class="bg-white dark:bg-black p-10 rounded-3xl border border-gray-200 dark:border-white/5 shadow-lg text-left hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2">Basic</h3>
+                    <div class="text-5xl font-extrabold mb-2">$10<span class="text-lg text-gray-500 font-medium">/min</span></div>
+                    <p class="text-gray-500 mb-8 text-sm">Perfect for simple cuts and standard retention edits.</p>
+                    <a href="https://wa.me/8801786776958" class="block text-center py-4 rounded-full font-bold bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 transition">Select Basic</a>
+                </div>
+                
+                <div class="bg-gradient-to-b from-gray-900 to-black dark:from-darkCard dark:to-black text-white p-10 rounded-3xl border border-gray-800 shadow-2xl text-left transform scale-105 relative z-10 glow-effect">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">Most Popular</div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Premium</h3>
+                    <div class="text-5xl font-extrabold mb-2 text-white">$20<span class="text-lg text-gray-400 font-medium">/min</span></div>
+                    <p class="text-gray-400 mb-8 text-sm">Advanced storytelling, motion graphics, and high-end sound design.</p>
+                    <a href="https://wa.me/8801786776958" class="block text-center py-4 rounded-full font-bold bg-brand hover:bg-emerald-600 transition shadow-lg shadow-brand/30">Select Premium</a>
+                </div>
+                
+                <div class="bg-white dark:bg-black p-10 rounded-3xl border border-gray-200 dark:border-white/5 shadow-lg text-left hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2">Advanced</h3>
+                    <div class="text-5xl font-extrabold mb-2">$30<span class="text-lg text-gray-500 font-medium">/min</span></div>
+                    <p class="text-gray-500 mb-8 text-sm">Full production level, 3D elements, intense color grading.</p>
+                    <a href="https://wa.me/8801786776958" class="block text-center py-4 rounded-full font-bold bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 transition">Select Advanced</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="gsap-section">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Not Just a Freelancer. <br><span class="text-brand">An Entrepreneur.</span></h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-6 text-lg leading-relaxed">
+                    Started freelancing in 2016 and completed <strong>6000+ projects</strong> globally. I prefer working with direct clients via WhatsApp for faster workflow and better results.
+                </p>
+                <p class="text-gray-600 dark:text-gray-400 mb-8 text-lg leading-relaxed">
+                    I don't work alone. I lead a top-notch, highly skilled remote team of <strong>100+ professionals</strong> under Multimedia Gen.
+                </p>
+                
+                <h3 class="font-bold text-xl mb-4 border-b border-gray-200 dark:border-white/10 pb-2">Team Structure Overview</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="bg-gray-100 dark:bg-darkCard p-4 rounded-2xl text-center border border-transparent hover:border-brand transition">
+                        <div class="text-3xl font-extrabold text-brand mb-1">40</div>
+                        <div class="text-xs font-bold text-gray-500 uppercase tracking-wider">Promoters</div>
+                    </div>
+                    <div class="bg-gray-100 dark:bg-darkCard p-4 rounded-2xl text-center border border-transparent hover:border-brand transition">
+                        <div class="text-3xl font-extrabold text-brand mb-1">30</div>
+                        <div class="text-xs font-bold text-gray-500 uppercase tracking-wider">Video Editors</div>
+                    </div>
+                    <div class="bg-gray-100 dark:bg-darkCard p-4 rounded-2xl text-center border border-transparent hover:border-brand transition">
+                        <div class="text-3xl font-extrabold text-brand mb-1">10</div>
+                        <div class="text-xs font-bold text-gray-500 uppercase tracking-wider">Designers</div>
+                    </div>
+                    <div class="bg-gray-100 dark:bg-darkCard p-4 rounded-2xl text-center border border-transparent hover:border-brand transition">
+                        <div class="text-3xl font-extrabold text-brand mb-1">10</div>
+                        <div class="text-xs font-bold text-gray-500 uppercase tracking-wider">Web Devs</div>
+                    </div>
+                    <div class="bg-gray-100 dark:bg-darkCard p-4 rounded-2xl text-center border border-transparent hover:border-brand transition">
+                        <div class="text-3xl font-extrabold text-brand mb-1">6</div>
+                        <div class="text-xs font-bold text-gray-500 uppercase tracking-wider">Marketers</div>
+                    </div>
+                    <div class="bg-gray-100 dark:bg-darkCard p-4 rounded-2xl text-center border border-transparent hover:border-brand transition">
+                        <div class="text-3xl font-extrabold text-brand mb-1">4</div>
+                        <div class="text-xs font-bold text-gray-500 uppercase tracking-wider">Managers</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative gsap-section">
+                <div class="absolute inset-0 bg-brand/20 blur-3xl rounded-full"></div>
+                <img src="ceo.jpeg" alt="Multimedia Gen Team Leader" class="relative z-10 w-full rounded-3xl shadow-2xl border border-white/10">
+                <div class="absolute -bottom-10 -left-10 bg-white dark:bg-darkCard p-6 rounded-2xl shadow-2xl border border-gray-100 dark:border-white/10 z-20 flex items-center gap-4">
+                    <div class="text-4xl text-brand"><i class="fas fa-trophy"></i></div>
+                    <div>
+                        <div class="text-2xl font-black">6000+</div>
+                        <div class="text-sm text-gray-500 font-bold">Projects Delivered</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-5xl mx-auto bg-gradient-to-br from-[#0f172a] to-black dark:from-darkCard dark:to-black border border-gray-800 rounded-[3rem] p-12 md:p-24 text-center text-white shadow-2xl relative overflow-hidden glow-effect">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-brand/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+            <div class="relative z-10 gsap-section">
+                <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Ready to scale your <span class="text-brand">brand?</span></h2>
+                <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                    Tell me about your project. I prefer working directly via WhatsApp for faster workflow and better results. Let's build your content strategy today.
+                </p>
+                <a href="https://wa.me/8801786776958" target="_blank" class="inline-flex items-center gap-3 bg-brand hover:bg-emerald-600 text-white px-10 py-5 rounded-full font-bold text-xl transition-transform hover:scale-105 shadow-[0_0_30px_rgba(16,185,129,0.3)]">
+                    <i class="fab fa-whatsapp text-2xl"></i> Message on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-200 dark:border-white/10 py-12 text-center text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-black">
+        <div class="flex justify-center gap-6 mb-8 text-xl">
+            <a href="https://www.facebook.com/people/MD-USMAN-GANI/61561117392803/" target="_blank" class="hover:text-brand transition"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/freelancerusman/" target="_blank" class="hover:text-brand transition"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@MD.USMAN_GANI" target="_blank" class="hover:text-brand transition"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/usmanifreelancer" target="_blank" class="hover:text-brand transition"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="font-medium text-sm">© 2026 Md Usman Gani - Multimedia Gen Institute. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 1. Dark Mode Toggle Logic
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        // Ensure dark mode is default as per preference, but allow toggle
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+        });
+
+        // 2. Portfolio Tabs Logic
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active from all
+                tabBtns.forEach(b => {
+                    b.classList.remove('bg-brand', 'text-white', 'shadow-lg');
+                    b.classList.add('bg-gray-200', 'text-gray-700', 'dark:bg-white/10', 'dark:text-gray-300');
+                });
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // Add active to clicked
+                btn.classList.remove('bg-gray-200', 'text-gray-700', 'dark:bg-white/10', 'dark:text-gray-300');
+                btn.classList.add('bg-brand', 'text-white', 'shadow-lg');
+                const target = btn.getAttribute('data-target');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+
+        // 3. GSAP Animations Setup
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Name Reveal Animation (Letter by Letter)
+        const brandName = document.getElementById('brandName');
+        const text = brandName.innerText;
+        brandName.innerHTML = '';
+        text.split('').forEach(char => {
+            let span = document.createElement('span');
+            span.innerHTML = char === ' ' ? '&nbsp;' : char;
+            brandName.appendChild(span);
+        });
+
+        gsap.to('#brandName span', {
+            y: 0,
+            opacity: 1,
+            stagger: 0.05,
+            duration: 0.5,
+            ease: "back.out(1.7)",
+            delay: 0.2
+        });
+
+        // Hero Section Entry
+        gsap.from('.gsap-hero', { y: 50, opacity: 0, duration: 1, ease: "power3.out" });
+        gsap.from('.gsap-hero-img', { scale: 0.8, opacity: 0, duration: 1, delay: 0.3, ease: "power3.out" });
+
+        // Scroll Animations for sections
+        const sections = document.querySelectorAll('.gsap-section');
+        sections.forEach(sec => {
+            gsap.from(sec, {
+                scrollTrigger: {
+                    trigger: sec,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                y: 40,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            });
+        });
+
+        // Stagger items (Services, Pricing)
+        const staggers = document.querySelectorAll('.gsap-stagger');
+        staggers.forEach(staggerContainer => {
+            gsap.from(staggerContainer.children, {
+                scrollTrigger: {
+                    trigger: staggerContainer,
+                    start: "top 85%",
+                },
+                y: 30,
+                opacity: 0,
+                stagger: 0.15,
+                duration: 0.6,
+                ease: "power2.out"
+            });
+        });
+
+        // Progress Bar Animation
+        const progressBars = document.querySelectorAll('.progress-bar');
+        progressBars.forEach(bar => {
+            const width = bar.getAttribute('data-width');
+            bar.style.width = '0%'; // start at 0
+            gsap.to(bar, {
+                scrollTrigger: {
+                    trigger: bar,
+                    start: "top 90%",
+                },
+                width: width,
+                duration: 1.5,
+                ease: "power3.out"
+            });
+        });
+    </script>
+</body>
+</html>
