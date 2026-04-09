@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Md Usman Gani | Video Editor | Helping Brands Turn Videos Into Sales | 10+ Years Experience</title>
-    <meta name="description" content="Md Usman Gani is a professional video editor and founder of Multimedia Gen with 10+ years experience, 6000+ projects, and a 100+ remote team delivering high-retention, conversion-focused video content.">
-    <meta name="keywords" content="best video editor in Bangladesh, video editor Bangladesh, professional video editing service, Multimedia Gen founder, high retention video editor, video marketing expert, sales video editor">
+    <meta name="description" content="I am a professional Video Editor and Content Conversion Specialist with 10+ years of experience helping business owners and professionals turn video content into leads, authority, and revenue. I combine creative editing with marketing strategy. 6000+ projects completed.">
+    <meta name="keywords" content="best video editor in Bangladesh, video editor Bangladesh, professional video editing service, high retention video editor, video marketing expert, sales video editor, content conversion specialist">
     <meta name="author" content="Md Usman Gani">
     <meta name="robots" content="index, follow, max-image-preview:large">
 
     <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/multimediagencom-glitch/mdusmangani-website/main/usmanfavicon.jpg">
 
-    <meta property="og:title" content="Md Usman Gani | Video Editor | Helping Brands Turn Videos Into Sales">
-    <meta property="og:description" content="I create high-retention, conversion-focused video content that grows businesses and generates sales.">
+    <meta property="og:title" content="Md Usman Gani | Video Editor & Content Conversion Specialist">
+    <meta property="og:description" content="I combine creative editing with marketing strategy to produce content that captures attention, holds viewers, and drives action. 6,000+ projects completed.">
     <meta property="og:image" content="https://mdusmangani.com/ceo.jpeg">
     <meta property="og:url" content="https://mdusmangani.com">
     <meta property="og:type" content="website">
@@ -35,7 +35,9 @@
         "https://www.linkedin.com/in/freelancerusman/",
         "https://www.facebook.com/people/MD-USMAN-GANI/61561117392803/",
         "https://www.youtube.com/@MD.USMAN_GANI",
-        "https://www.instagram.com/usmanifreelancer"
+        "https://www.instagram.com/usmanifreelancer",
+        "https://www.fiverr.com/sellers/mdusmangani75",
+        "https://share.google/ouRdQ10i5kt3fxdhB"
       ]
     }
     </script>
@@ -78,7 +80,7 @@
         .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
         .gradient-text { background: linear-gradient(135deg, #10b981, #34d399, #059669); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         
-        /* Smooth Hover & Glow - Updated with Cubic Bezier for buttery smoothness */
+        /* Smooth Hover & Glow */
         .glow-hover { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         .glow-hover:hover { box-shadow: 0 15px 35px rgba(16, 185, 129, 0.2); transform: translateY(-8px); border-color: rgba(16, 185, 129, 0.5); }
 
@@ -91,16 +93,20 @@
         .float-slow { animation: float 5s ease-in-out infinite reverse; }
         @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
 
-        /* Portfolio Tabs Layout Fix (Zero Gap Guarantee) */
+        /* Portfolio Tabs Layout Fix */
         .tab-content { display: none !important; opacity: 0; height: 0; overflow: hidden; }
         .tab-content.active { display: block !important; opacity: 1; height: auto; overflow: visible; animation: fadeInTab 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
         @keyframes fadeInTab { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         
+        /* Form Element Styles */
+        select option { background-color: #111; color: #fff; }
+        .light select option { background-color: #fff; color: #000; }
+
         /* Responsive Video Containers */
         .aspect-shorts { aspect-ratio: 9 / 16; }
         .iframe-bg { background-color: #1a1a1a; background-image: radial-gradient(circle, #333 1px, transparent 1px); background-size: 10px 10px; } 
 
-        /* Hide Scrollbar */
+        /* Hide Scrollbar for Horizontals */
         .hide-scroll::-webkit-scrollbar { display: none; }
         .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
@@ -126,7 +132,7 @@
             </nav>
 
             <div class="flex items-center gap-4">
-                <button id="themeToggle" class="p-2.5 rounded-full bg-gray-200 dark:bg-white/10 hover:bg-gray-300 dark:hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-brand" aria-label="Toggle Dark Mode">
+                <button id="themeToggle" class="p-2.5 rounded-full bg-gray-200 dark:bg-white/10 hover:bg-gray-300 dark:hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-brand">
                     <i class="fas fa-moon dark:hidden text-gray-700"></i>
                     <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
                 </button>
@@ -134,7 +140,7 @@
                     <i class="fab fa-whatsapp text-lg"></i> Book a Call
                 </a>
                 
-                <button id="mobileMenuBtn" class="lg:hidden text-2xl text-gray-800 dark:text-white focus:outline-none" aria-label="Open Mobile Menu">
+                <button id="mobileMenuBtn" class="lg:hidden text-2xl text-gray-800 dark:text-white focus:outline-none">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -186,7 +192,7 @@
             </ul>
 
             <div class="flex flex-wrap gap-4">
-                <a href="https://wa.me/8801786776958" target="_blank" rel="noopener noreferrer" class="bg-brand hover:bg-emerald-600 text-white px-8 py-4 rounded-full font-bold transition-all hover:scale-105 shadow-lg shadow-brand/30 flex items-center gap-2">
+                <a href="#contact" class="bg-brand hover:bg-emerald-600 text-white px-8 py-4 rounded-full font-bold transition-all hover:scale-105 shadow-lg shadow-brand/30 flex items-center gap-2">
                     <i class="fab fa-whatsapp text-xl"></i> Discuss Project
                 </a>
                 <a href="#portfolio" class="px-8 py-4 rounded-full font-bold border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-white/5 transition-all">
@@ -197,7 +203,6 @@
 
         <div class="relative gsap-hero-img flex justify-center mt-10 lg:mt-0">
             <div class="absolute inset-0 bg-gradient-to-tr from-brand/30 to-transparent blur-[100px] rounded-full max-w-md mx-auto"></div>
-            
             <div class="relative z-10 p-2 rounded-[2.5rem] bg-gradient-to-tr from-brand to-gray-800 shadow-2xl glow-hover group">
                 <img src="ceo.jpeg" alt="Md Usman Gani Video Editor" class="w-full max-w-[380px] rounded-[2rem] object-cover aspect-[4/5] filter contrast-105 group-hover:scale-[1.02] transition-transform duration-500">
             </div>
@@ -216,10 +221,11 @@
             <div class="flex items-center gap-6">
                 <span class="font-bold text-gray-500 uppercase tracking-widest text-sm">Follow Me</span>
                 <div class="flex gap-4">
-                    <a href="https://www.linkedin.com/in/freelancerusman/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-[#0077b5] hover:text-white transition-all hover:scale-110 shadow-sm"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.facebook.com/people/MD-USMAN-GANI/61561117392803/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-[#1877F2] hover:text-white transition-all hover:scale-110 shadow-sm"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.youtube.com/@MD.USMAN_GANI" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-[#FF0000] hover:text-white transition-all hover:scale-110 shadow-sm"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/usmanifreelancer" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-[#E4405F] hover:text-white transition-all hover:scale-110 shadow-sm"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.fiverr.com/sellers/mdusmangani75" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-[#00b22d] hover:text-white transition-all hover:scale-110 shadow-sm"><span class="font-black italic text-lg">fi</span></a>
+                    <a href="https://www.linkedin.com/in/freelancerusman/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-[#0077b5] hover:text-white transition-all hover:scale-110 shadow-sm"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/people/MD-USMAN-GANI/61561117392803/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-[#1877F2] hover:text-white transition-all hover:scale-110 shadow-sm"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@MD.USMAN_GANI" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-[#FF0000] hover:text-white transition-all hover:scale-110 shadow-sm"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/usmanifreelancer" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-[#E4405F] hover:text-white transition-all hover:scale-110 shadow-sm"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             
@@ -480,20 +486,23 @@
             <div class="grid md:grid-cols-3 gap-8 items-center max-w-5xl mx-auto gsap-stagger">
                 <div class="bg-gray-50 dark:bg-[#111] p-10 rounded-3xl border border-gray-200 dark:border-white/5 shadow-md text-left glow-hover">
                     <h3 class="text-xl font-bold mb-2">Basic</h3>
-                    <div class="text-5xl font-black mb-6">$10<span class="text-lg text-gray-500 font-medium">/min</span></div>
+                    <div class="text-5xl font-black mb-4">$10<span class="text-lg text-gray-500 font-medium">/min</span></div>
+                    <p class="text-gray-500 dark:text-gray-400 mb-8 text-sm font-medium">Perfect for simple cuts, essential color correction, and standard retention edits.</p>
                     <a href="https://wa.me/8801786776958" target="_blank" rel="noopener noreferrer" class="block text-center py-3 rounded-full font-bold bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-brand hover:text-brand transition shadow-sm">Select Basic</a>
                 </div>
                 
                 <div class="bg-gradient-to-b from-gray-900 to-black dark:from-[#111] dark:to-black text-white p-12 rounded-3xl border border-gray-800 shadow-[0_20px_40px_rgba(16,185,129,0.15)] text-left transform md:scale-105 relative z-10">
                     <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand text-white px-4 py-1 rounded-full text-xs font-bold shadow-md uppercase">Most Popular</div>
                     <h3 class="text-xl font-bold mb-2 text-gray-300">Premium</h3>
-                    <div class="text-5xl font-black mb-6 text-white">$20<span class="text-lg text-gray-400 font-medium">/min</span></div>
+                    <div class="text-5xl font-black mb-4 text-white">$20<span class="text-lg text-gray-400 font-medium">/min</span></div>
+                    <p class="text-gray-400 mb-8 text-sm font-medium">Advanced storytelling, motion graphics, high-end sound design, and viral hooks.</p>
                     <a href="https://wa.me/8801786776958" target="_blank" rel="noopener noreferrer" class="block text-center py-3 rounded-full font-bold bg-brand hover:bg-emerald-600 transition shadow-[0_0_15px_rgba(16,185,129,0.4)]">Select Premium</a>
                 </div>
                 
                 <div class="bg-gray-50 dark:bg-[#111] p-10 rounded-3xl border border-gray-200 dark:border-white/5 shadow-md text-left glow-hover">
                     <h3 class="text-xl font-bold mb-2">Advanced</h3>
-                    <div class="text-5xl font-black mb-6">$30<span class="text-lg text-gray-500 font-medium">/min</span></div>
+                    <div class="text-5xl font-black mb-4">$30<span class="text-lg text-gray-500 font-medium">/min</span></div>
+                    <p class="text-gray-500 dark:text-gray-400 mb-8 text-sm font-medium">Full production level, 3D elements, intense color grading, and custom animations.</p>
                     <a href="https://wa.me/8801786776958" target="_blank" rel="noopener noreferrer" class="block text-center py-3 rounded-full font-bold bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-brand hover:text-brand transition shadow-sm">Select Advanced</a>
                 </div>
             </div>
@@ -547,79 +556,169 @@
         </div>
         
         <div class="flex gap-6 overflow-x-auto px-6 max-w-7xl mx-auto pb-8 hide-scroll snap-mandatory snap-x">
-            <div class="snap-center min-w-[320px] md:min-w-[400px] bg-white dark:bg-[#111] p-8 rounded-3xl shadow-sm border border-gray-200 dark:border-white/5 glow-hover">
-                <div class="flex justify-between items-center mb-4">
-                    <div class="text-yellow-400 text-xl flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <span class="text-[#00b22d] font-bold text-sm"><i class="fas fa-check-circle"></i> Fiverr Verified</span>
+            <div class="snap-center min-w-[320px] md:min-w-[400px] bg-white dark:bg-[#111] p-8 rounded-3xl shadow-sm border border-gray-200 dark:border-white/5 glow-hover flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <div class="text-yellow-400 text-lg flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                            <div class="text-xs text-gray-500 font-bold mt-1">Canada • 9 months ago</div>
+                        </div>
+                        <a href="https://www.fiverr.com/sellers/mdusmangani75" target="_blank" rel="noopener noreferrer" class="text-[#00b22d] text-xs font-bold flex items-center gap-1 hover:underline"><i class="fas fa-check-circle"></i> Verified</a>
+                    </div>
+                    <p class="text-gray-800 dark:text-gray-200 font-medium mb-6">"Great working with Usman, definitely will create more projects with him in the future."</p>
                 </div>
-                <p class="text-gray-800 dark:text-gray-200 font-medium mb-6">"Usman is an exceptional video editor! He understood exactly what my brand needed and delivered a high-retention video that boosted my sales. Highly recommended!"</p>
-                <div class="font-bold text-gray-500">— Content Creator, USA</div>
+                <div class="font-bold text-gray-900 dark:text-white flex items-center justify-between">
+                    <span>backdoorbillion</span>
+                    <span class="bg-gray-100 dark:bg-white/10 px-2 py-1 rounded text-xs">Repeat Client</span>
+                </div>
             </div>
             
-            <div class="snap-center min-w-[320px] md:min-w-[400px] bg-white dark:bg-[#111] p-8 rounded-3xl shadow-sm border border-gray-200 dark:border-white/5 glow-hover">
-                <div class="flex justify-between items-center mb-4">
-                    <div class="text-yellow-400 text-xl flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <span class="text-[#1877F2] font-bold text-sm"><i class="fab fa-facebook"></i> Facebook Page</span>
+            <div class="snap-center min-w-[320px] md:min-w-[400px] bg-white dark:bg-[#111] p-8 rounded-3xl shadow-sm border border-gray-200 dark:border-white/5 glow-hover flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <div class="text-yellow-400 text-lg flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="text-xs text-gray-500 font-bold mt-1">United States • 2 years ago</div>
+                        </div>
+                        <a href="https://www.fiverr.com/sellers/mdusmangani75" target="_blank" rel="noopener noreferrer" class="text-[#00b22d] text-xs font-bold flex items-center gap-1 hover:underline"><i class="fas fa-check-circle"></i> Verified</a>
+                    </div>
+                    <p class="text-gray-800 dark:text-gray-200 font-medium mb-6">"Awesome experience! seller is very enthusiastic and passionate about his work. he will go the extra mile to deliver the best product."</p>
                 </div>
-                <p class="text-gray-800 dark:text-gray-200 font-medium mb-6">"Working with Multimedia Gen has been a game-changer. Usman's strategic approach isn't just about cutting clips; it's about audience psychology and retention."</p>
-                <div class="font-bold text-gray-500">— Business Agency</div>
+                <div class="font-bold text-gray-900 dark:text-white">tebusiness56</div>
             </div>
 
-            <div class="snap-center min-w-[320px] md:min-w-[400px] bg-white dark:bg-[#111] p-8 rounded-3xl shadow-sm border border-gray-200 dark:border-white/5 glow-hover">
-                <div class="flex justify-between items-center mb-4">
-                    <div class="text-yellow-400 text-xl flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <span class="text-gray-600 dark:text-gray-400 font-bold text-sm"><i class="fab fa-google text-red-500"></i> Google Reviews</span>
+            <div class="snap-center min-w-[320px] md:min-w-[400px] bg-white dark:bg-[#111] p-8 rounded-3xl shadow-sm border border-gray-200 dark:border-white/5 glow-hover flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <div class="text-yellow-400 text-lg flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="text-xs text-gray-500 font-bold mt-1">Google My Business</div>
+                        </div>
+                        <a href="https://share.google/ouRdQ10i5kt3fxdhB" target="_blank" rel="noopener noreferrer" class="text-[#4285F4] text-xs font-bold flex items-center gap-1 hover:underline"><i class="fab fa-google"></i> Verified</a>
+                    </div>
+                    <p class="text-gray-800 dark:text-gray-200 font-medium mb-6">"Top-notch professionalism and lightning-fast delivery. The documentary edit was cinematic and kept viewers hooked till the very last second."</p>
                 </div>
-                <p class="text-gray-800 dark:text-gray-200 font-medium mb-6">"Top-notch professionalism and lightning-fast delivery. The documentary edit was cinematic and kept viewers hooked till the very last second."</p>
-                <div class="font-bold text-gray-500">— YouTube Channel Owner</div>
+                <div class="font-bold text-gray-900 dark:text-white">YouTube Creator</div>
+            </div>
+
+            <div class="snap-center min-w-[320px] md:min-w-[400px] bg-white dark:bg-[#111] p-8 rounded-3xl shadow-sm border border-gray-200 dark:border-white/5 glow-hover flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <div class="text-yellow-400 text-lg flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                            <div class="text-xs text-gray-500 font-bold mt-1">United States • 3 years ago</div>
+                        </div>
+                        <a href="https://www.fiverr.com/sellers/mdusmangani75" target="_blank" rel="noopener noreferrer" class="text-[#00b22d] text-xs font-bold flex items-center gap-1 hover:underline"><i class="fas fa-check-circle"></i> Verified</a>
+                    </div>
+                    <p class="text-gray-800 dark:text-gray-200 font-medium mb-6">"The seller communicated with me throughout the whole process. The quality of the work was great. High quality images and sound."</p>
+                </div>
+                <div class="font-bold text-gray-900 dark:text-white flex items-center justify-between">
+                    <span>skylermurphy</span>
+                    <span class="bg-gray-100 dark:bg-white/10 px-2 py-1 rounded text-xs">Repeat Client</span>
+                </div>
             </div>
         </div>
 
-        <div class="text-center mt-6">
-            <a href="https://www.fiverr.com/s/Gzwo4md" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#00b22d] hover:bg-[#009024] text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg shadow-green-500/30 hover:-translate-y-1">
-                Visit My Fiverr Gig <i class="fas fa-external-link-alt text-sm"></i>
+        <div class="mt-8 flex flex-wrap justify-center gap-4 px-6">
+            <a href="https://g.page/r/CYrm2ggHJjMLEAI/review" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-gray-900 border border-gray-200 px-8 py-3.5 rounded-full font-bold transition-all shadow-md hover:-translate-y-1 hover:shadow-lg dark:bg-white/5 dark:text-white dark:border-white/10 dark:hover:border-gray-500">
+                <i class="fab fa-google text-red-500"></i> Leave a Google Review
+            </a>
+            <a href="https://share.google/ouRdQ10i5kt3fxdhB" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#4285F4] text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-md hover:-translate-y-1 hover:bg-[#3367D6]">
+                <i class="fas fa-shield-alt"></i> Verify Google Profile
             </a>
         </div>
     </section>
 
-    <section id="contact" class="py-24 px-6">
-        <div class="max-w-4xl mx-auto bg-gradient-to-br from-gray-900 to-black dark:from-[#080808] dark:to-[#111] border border-gray-800 rounded-[2.5rem] p-10 md:p-16 text-center text-white shadow-2xl relative overflow-hidden glow-hover">
-            <div class="absolute top-0 right-0 w-80 h-80 bg-brand/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"></div>
+    <section id="contact" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="bg-gradient-to-br from-gray-900 to-black dark:from-[#080808] dark:to-[#111] border border-gray-800 rounded-[2.5rem] p-8 md:p-16 shadow-2xl relative overflow-hidden glow-hover">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-brand/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
             
-            <div class="relative z-10 gsap-section">
-                <h2 class="text-4xl md:text-5xl font-black mb-4">Let’s Work <span class="text-brand">Together</span></h2>
-                <p class="text-gray-400 mb-10 text-lg max-w-xl mx-auto">Tell me about your project — I’ll guide you with the best content strategy.</p>
+            <div class="relative z-10 grid lg:grid-cols-2 gap-16 items-center gsap-section">
                 
-                <div class="grid sm:grid-cols-3 gap-4 mb-10 max-w-2xl mx-auto">
-                    <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
-                        <i class="fas fa-phone-alt text-brand text-2xl mb-2"></i>
-                        <div class="font-bold text-sm">+880 1786 776958</div>
+                <div class="text-white">
+                    <h2 class="text-4xl md:text-5xl font-black mb-4">Let’s Work <span class="text-brand">Together</span></h2>
+                    <p class="text-gray-400 mb-10 text-lg">Have a project in mind? Fill out the form or reach me directly. I’ll guide you with the best content strategy.</p>
+                    
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-brand transition-colors">
+                            <div class="w-12 h-12 bg-brand/20 text-brand rounded-full flex items-center justify-center text-xl"><i class="fas fa-phone-alt"></i></div>
+                            <div><div class="text-sm text-gray-400 font-bold uppercase tracking-wider">WhatsApp & Phone</div><div class="font-bold text-lg">+880 1786 776958</div></div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-brand transition-colors">
+                            <div class="w-12 h-12 bg-brand/20 text-brand rounded-full flex items-center justify-center text-xl"><i class="fas fa-envelope"></i></div>
+                            <div><div class="text-sm text-gray-400 font-bold uppercase tracking-wider">Email Address</div><div class="font-bold text-lg break-all">usmanifreelancer@gmail.com</div></div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-brand transition-colors">
+                            <div class="w-12 h-12 bg-brand/20 text-brand rounded-full flex items-center justify-center text-xl"><i class="fas fa-globe-americas"></i></div>
+                            <div><div class="text-sm text-gray-400 font-bold uppercase tracking-wider">Location</div><div class="font-bold text-lg">Remote Worldwide</div></div>
+                        </div>
                     </div>
-                    <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
-                        <i class="fas fa-envelope text-brand text-2xl mb-2"></i>
-                        <div class="font-bold text-xs break-words">usmanifreelancer<br>@gmail.com</div>
-                    </div>
-                    <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
-                        <i class="fas fa-globe-americas text-brand text-2xl mb-2"></i>
-                        <div class="font-bold text-sm">Remote Worldwide</div>
-                    </div>
+                    
+                    <a href="https://wa.me/8801786776958" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-brand hover:bg-emerald-500 text-white px-8 py-4 rounded-full font-black text-lg transition-all hover:scale-105 shadow-[0_0_20px_rgba(16,185,129,0.3)] w-full justify-center md:w-auto">
+                        <i class="fab fa-whatsapp text-2xl"></i> Direct WhatsApp
+                    </a>
                 </div>
-                
-                <a href="https://wa.me/8801786776958" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-brand hover:bg-emerald-500 text-white px-10 py-5 rounded-full font-black text-xl transition-all hover:scale-105 shadow-[0_0_30px_rgba(16,185,129,0.3)]">
-                    <i class="fab fa-whatsapp text-2xl"></i> Message on WhatsApp
-                </a>
+
+                <div class="bg-[#111]/80 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-inner">
+                    <h3 class="text-2xl font-bold text-white mb-6">Send an Inquiry</h3>
+                    <form action="https://formsubmit.co/usmanifreelancer@gmail.com" method="POST" class="space-y-5">
+                        
+                        <input type="hidden" name="_subject" value="New Project Inquiry from Portfolio Website!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div>
+                            <label class="block text-sm font-bold text-gray-400 mb-2">Your Name</label>
+                            <input type="text" name="Name" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors" placeholder="John Doe">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-bold text-gray-400 mb-2">Email Address</label>
+                            <input type="email" name="Email" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors" placeholder="john@example.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-400 mb-2">WhatsApp Number (Optional)</label>
+                            <input type="text" name="WhatsApp" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors" placeholder="+1 234 567 890">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-400 mb-2">What service do you need?</label>
+                            <select name="Service_Needed" required class="w-full bg-[#111] border border-white/10 rounded-xl px-4 py-3 text-gray-300 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors appearance-none cursor-pointer">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="Documentary Editing">Documentary Editing</option>
+                                <option value="Talking Head Editing">Talking Head Editing</option>
+                                <option value="Reels / Shorts">Reels / Shorts</option>
+                                <option value="Promotional Ads">Promotional Ads</option>
+                                <option value="Video Marketing Strategy">Video Marketing Strategy</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-bold text-gray-400 mb-2">Message</label>
+                            <textarea name="Message" rows="3" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors resize-none" placeholder="Tell me a bit about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-white text-black hover:bg-gray-200 px-6 py-4 rounded-xl font-bold text-lg transition-colors flex justify-center items-center gap-2 mt-2">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
             </div>
         </div>
     </section>
 
     <footer class="border-t border-gray-200 dark:border-white/10 py-12 text-center text-gray-500 dark:text-gray-400 bg-white dark:bg-black">
         <div class="flex justify-center gap-8 mb-8 text-2xl">
-            <a href="https://www.linkedin.com/in/freelancerusman/" target="_blank" rel="noopener noreferrer" class="hover:text-[#0077b5] transition-all hover:-translate-y-1"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/people/MD-USMAN-GANI/61561117392803/" target="_blank" rel="noopener noreferrer" class="hover:text-[#1877F2] transition-all hover:-translate-y-1"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.youtube.com/@MD.USMAN_GANI" target="_blank" rel="noopener noreferrer" class="hover:text-[#FF0000] transition-all hover:-translate-y-1"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/usmanifreelancer" target="_blank" rel="noopener noreferrer" class="hover:text-[#E4405F] transition-all hover:-translate-y-1"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.fiverr.com/sellers/mdusmangani75" target="_blank" rel="noopener noreferrer" aria-label="Fiverr" class="hover:text-[#00b22d] transition-all hover:-translate-y-1"><span class="font-black italic text-xl">fi</span></a>
+            <a href="https://www.linkedin.com/in/freelancerusman/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-[#0077b5] transition-all hover:-translate-y-1"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/people/MD-USMAN-GANI/61561117392803/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-[#1877F2] transition-all hover:-translate-y-1"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@MD.USMAN_GANI" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="hover:text-[#FF0000] transition-all hover:-translate-y-1"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/usmanifreelancer" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-[#E4405F] transition-all hover:-translate-y-1"><i class="fab fa-instagram"></i></a>
         </div>
-        <p class="font-semibold text-sm">© 2026 Md Usman Gani - Multimedia Gen Institute. All rights reserved.</p>
+        <p class="font-semibold text-sm">© 2026 Md Usman Gani. All rights reserved.</p>
     </footer>
 
     <script>
@@ -628,7 +727,7 @@
         const html = document.documentElement;
         themeToggle.addEventListener('click', () => { html.classList.toggle('dark'); });
 
-        // 2. Mobile Menu Logic (Added by Expert)
+        // 2. Mobile Menu Logic
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -639,7 +738,7 @@
             if (isMenuOpen) {
                 mobileMenu.classList.remove('translate-x-full');
                 mobileMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                document.body.style.overflow = 'hidden'; 
             } else {
                 mobileMenu.classList.add('translate-x-full');
                 mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
